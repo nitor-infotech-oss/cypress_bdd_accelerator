@@ -1,0 +1,29 @@
+{
+  "name": "cypress-automation-suite",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.2.0",
+    "cypress": "^4.5.0",
+    "cypress-cucumber-preprocessor": "^2.3.1"
+  },
+  "scripts": {
+    "delete:reports": "if exist  \".\\cypress\\results\" rmdir .\\cypress\\results /q /s",
+    "pretestE2E": "npm run delete:reports",
+    "testE2E": "./node_modules/.bin/cypress run",
+    "openCypress": "./node_modules/.bin/cypress run",
+    "generateHTMLReport": "node index.js",
+    "getFeatureFiles": "hiptest-publisher -c hiptest-publisher.conf --only=features"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/integration/featureFiles/stepdefinition/",
+    "commonPath": "cypress/integration/featureFiles/stepdefinition/common/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "./cypress/results/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

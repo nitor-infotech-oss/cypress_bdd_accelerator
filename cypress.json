@@ -1,0 +1,16 @@
+{
+    "defaultCommandTimeout": 6000,
+    "pageLoadTimeout": 20000,
+    "baseUrl": "http://google.com",
+    "env": {
+    "qa": {
+      "url": "https://react-redux.realworld.io/"
+    },
+    "dev": {
+      "url": "https://google.com"
+    },
+    "env": "qa"
+  },
+  "testFiles": "**/*.{feature,features}",
+  "ignoreTestFiles": "*.js"
+}
