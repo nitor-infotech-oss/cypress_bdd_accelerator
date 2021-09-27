@@ -1,30 +1,30 @@
 class UserDashboardPage {
+  getLoggedInUsername() {
+    return cy.get(":nth-child(4) > .nav-link");
+  }
 
-    getLoggedInUsername()
-    {
-        return cy.get(':nth-child(4) > .nav-link');
-    }
+  getNewPostLink() {
+    return cy.get('a[href="/editor"]');
+  }
 
-    getNewPostLink()
-    {
-        return cy.get('a[href="/editor"]');
-    }
+  getYourFeedLink() {
+    return cy.get(".feed-toggle > .nav > :nth-child(1) > .nav-link");
+  }
 
-    getYourFeedLink()
-    {
-        return cy.get('.feed-toggle > .nav > :nth-child(1) > .nav-link');
-    }
+  getGlobalFeedLink() {
+    return cy.get(".feed-toggle > .nav > :nth-child(2) > .nav-link");
+  }
 
-    getGlobalFeedLink()
-    {
-        return cy.get('.feed-toggle > .nav > :nth-child(2) > .nav-link');
-    }
+  getPopulatTagsSidebar() {
+    return cy.get(".sidebar");
+  }
 
-    getPopulatTagsSidebar()
-    {
-        return cy.get('.sidebar');
-    }
+  getSettingsLink() {
+    return cy.contains("Settings");
+  }
 
-
+  getLogoutLink() {
+    return cy.contains("logout");
+  }
 }
 export default UserDashboardPage;

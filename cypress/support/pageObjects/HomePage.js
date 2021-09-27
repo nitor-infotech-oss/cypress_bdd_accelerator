@@ -1,28 +1,17 @@
 class HomePage {
+  getLogo = () => cy.get("h1.logo-font");
 
-    getLogo(){
-        return cy.get('.logo-font');
-    }
+  getHomeButton = () => cy.get(".navbar-nav li a").eq(0);
 
-    getHomeButton()
-    {
-        return cy.get(".navbar-nav li a").eq(0);
-    }
+  getSignInButton = () => cy.get('a[href="/login"]');
 
-    getSignInButton()
-    {
-        return cy.get('a[href="/login"]');
-    }
+  getSignUpButton = () => cy.get(".navbar-nav li a").eq(2);
 
-    getSignUpButton()
-    {
-        return cy.get(".navbar-nav li a").eq(2);
-    }
-    
-    getTags()
-    {
-        return cy.get('div a.tag-default.tag-pill')
-    }
+  getTags = () => cy.get("div a.tag-default.tag-pill");
+
+  getActiveTags = () => cy.get(".nav-link.active");
+
+  getGlobalFeedButton = () => cy.contains("Global Feed");
 }
 
 export default HomePage;

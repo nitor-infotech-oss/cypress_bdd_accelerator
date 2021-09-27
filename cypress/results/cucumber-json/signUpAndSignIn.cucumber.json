@@ -1,0 +1,134 @@
+[
+  {
+    "description": "    To validate that the user is able to sign up and then sign in with email id and password",
+    "keyword": "Feature",
+    "name": "signUpAndSignIn",
+    "line": 1,
+    "id": "signupandsignin",
+    "tags": [],
+    "uri": "signUpAndSignIn.feature",
+    "elements": [
+      {
+        "id": "signupandsignin;validate-user-is-able-to-sign-up-in-the-application",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Validate user is able to sign up in the application",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open application",
+            "result": {
+              "status": "passed",
+              "duration": 6060000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I register User using faker data",
+            "result": {
+              "status": "passed",
+              "duration": 1304000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I can see the username displayed on header",
+            "result": {
+              "status": "failed",
+              "duration": 6016000000,
+              "error_message": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `:nth-child(4) > .nav-link`, but never found it.\n    at Context.eval (https://angular.realworld.io/__cypress/tests?p=cypress/integration/featureFiles/signUpAndSignIn.feature:549:55)\n    at Context.resolveAndRunStepDefinition (https://angular.realworld.io/__cypress/tests?p=cypress/integration/featureFiles/signUpAndSignIn.feature:11002:29)\n    at Context.eval (https://angular.realworld.io/__cypress/tests?p=cypress/integration/featureFiles/signUpAndSignIn.feature:10334:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "signupandsignin;validate-user-is-able-to-sign-in-the-application-with-user-created-earlier",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Validate user is able to sign in the application with user created earlier",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I open application",
+            "result": {
+              "status": "passed",
+              "duration": 5301000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I sign in as a User",
+            "result": {
+              "status": "passed",
+              "duration": 1014000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I can see the username displayed on header",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `:nth-child(4) > .nav-link`, but never found it.\n    at Context.eval (https://angular.realworld.io/__cypress/tests?p=cypress/integration/featureFiles/signUpAndSignIn.feature:549:55)\n    at Context.resolveAndRunStepDefinition (https://angular.realworld.io/__cypress/tests?p=cypress/integration/featureFiles/signUpAndSignIn.feature:11002:29)\n    at Context.eval (https://angular.realworld.io/__cypress/tests?p=cypress/integration/featureFiles/signUpAndSignIn.feature:10334:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "signupandsignin;validate-user-is-able-to-sign-up-using-json",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Validate user is able to sign up using Json",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I open application",
+            "result": {
+              "status": "passed",
+              "duration": 5279000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I register User using Json",
+            "result": {
+              "status": "passed",
+              "duration": 1449000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I can see the username displayed on header",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `:nth-child(4) > .nav-link`, but never found it.\n    at Context.eval (https://angular.realworld.io/__cypress/tests?p=cypress/integration/featureFiles/signUpAndSignIn.feature:549:55)\n    at Context.resolveAndRunStepDefinition (https://angular.realworld.io/__cypress/tests?p=cypress/integration/featureFiles/signUpAndSignIn.feature:11002:29)\n    at Context.eval (https://angular.realworld.io/__cypress/tests?p=cypress/integration/featureFiles/signUpAndSignIn.feature:10334:35)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

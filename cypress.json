@@ -1,15 +1,15 @@
 {
-    "defaultCommandTimeout": 6000,
-    "pageLoadTimeout": 20000,
-    "baseUrl": "http://google.com",
-    "env": {
+  "defaultCommandTimeout": 6000,
+  "pageLoadTimeout": 20000,
+  "baseUrl": "https://reqres.in/",
+  "env": {
     "qa": {
-      "url": "https://react-redux.realworld.io/"
+      "url": "https://angular.realworld.io/"
     },
     "dev": {
-      "url": "https://google.com"
+      "url": "devurl"
     },
-    "env": "qa"
+    "run_env": "qa"
   },
   "testFiles": "**/*.{feature,features}",
   "ignoreTestFiles": "*.js"

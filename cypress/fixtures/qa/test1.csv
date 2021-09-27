@@ -1,3 +1,2 @@
-﻿col1,col2,col3,col4
-test1,test@12,test123@qa.com,4
-test'1,4,5,6
+﻿username,email,password
+testusercsv,testusercsv1@google.com,testusercsv@conduit

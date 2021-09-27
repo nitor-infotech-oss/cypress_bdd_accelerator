@@ -1,0 +1,208 @@
+[
+  {
+    "description": "    Validate home page",
+    "keyword": "Feature",
+    "name": "homePage",
+    "line": 1,
+    "id": "homepage",
+    "tags": [],
+    "uri": "homePage.feature",
+    "elements": [
+      {
+        "id": "homepage;validating-first-page",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Validating first page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open application",
+            "result": {
+              "status": "passed",
+              "duration": 5533000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I Select \"angularjs\" from tags",
+            "result": {
+              "status": "passed",
+              "duration": 191000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be able to see comments with \"angularjs\"",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I see \"Conduit\" in the title",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "homepage;validating-first-page-negative",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Validating first page negative",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I open application",
+            "result": {
+              "status": "passed",
+              "duration": 5192000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should not see \"Invalid\" in the title",
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "homepage;validate-user-is-able-to-navigate-back-to-global-feed-after-applying-tags",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Validate user is able to navigate back to global feed after applying tags",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I open application",
+            "result": {
+              "status": "passed",
+              "duration": 5274000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "tags"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "angularjs"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "welcome"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I Validate comments as per tags selected",
+            "result": {
+              "status": "passed",
+              "duration": 359000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I am able to navigate back to Global Feed",
+            "result": {
+              "status": "passed",
+              "duration": 116000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "homepage;validate-updated-comments-on-selecting-tags-from-right-pane",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Validate updated comments on selecting tags from right pane",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I open application",
+            "result": {
+              "status": "passed",
+              "duration": 5210000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "tags"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "string"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "introduction"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "welcome"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I Validate comments as per tags selected",
+            "result": {
+              "status": "passed",
+              "duration": 478000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

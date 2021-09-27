@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Api calls validation",
+    "line": 1,
+    "id": "api-calls-validation",
+    "tags": [],
+    "uri": "API.feature",
+    "elements": [
+      {
+        "id": "api-calls-validation;validate-update-user-api",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate update user API",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I update the user profile using API",
+            "result": {
+              "status": "passed",
+              "duration": 350000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-calls-validation;validate-user-creation-api",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Validate user creation API",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I Login to the application using API",
+            "result": {
+              "status": "passed",
+              "duration": 348000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I run the create user api",
+            "result": {
+              "status": "passed",
+              "duration": 315000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I validate the new user created using get api",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -25,11 +25,11 @@ You can view a live demo of application under test at https://react-redux.realwo
 1. NodeJs should be installed on a machine.
 2. install ruby 2.6.6-1(X64) from https://rubyinstaller.org/downloads/
 3. install dependency(MSYs2), if not installed during RUBY installation, run below command:
-  1. ridk install
+ - ridk install
 4. install nokogiri
-  1. gem install nokogiri
+-  gem install nokogiri
 5. install hiptest-publisher
-  1. gem install hiptest-publisher
+  - gem install hiptest-publisher
 
 ### To execute the automation suite:
 
